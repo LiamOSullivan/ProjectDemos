@@ -26,9 +26,9 @@
                 <h1 class="title">Liam O'Sullivan - Software Projects</h1>
                 <nav>
                     <ul>
-                        <li><a href="#">Introduction</a></li>
-                        <li><a href="#">Project A </a></li>
-                        <li><a href="#">Project B </a></li>
+                        <li><a href="#intro">Introduction</a></li>
+                        <li><a href="#projA">Project A </a></li>
+                        <li><a href="#projB">Project B </a></li>
                     </ul>
                 </nav>
             </header>
@@ -40,37 +40,39 @@
                 <article>
                     <header>
                         <h1>Project Demonstrations</h1>
-                        <h2>Introduction</h2>
+                        <a name = "intro"><h2>Introduction</h2></a>
                         <p style="text-align:justify">I've chosen two projects below to illustrate the variety of work I've done as a programmer and to demonstrate particular skills relevant to the Building City Dashboards project.<br>
-                            <strong> Project A </strong> is a way-finding application with a situated multimodal interface designed for accessibility. This demonstrates a 'bread-and-butter' Java application with typical administrative functionality available via a familiar menu system, implemented with a standard Model-View-Controller design pattern. Data management includes parsing XML to load and display a map, and embedded media files (immersive spatial audio) in the visualization. The system integrates a hand-tracking sensor and hardware buttons for robust user interaction.<br>
-                            <strong> Project B </strong> is a remote sensing device on an Internet-of-Things (IoT) platform. This is somewhat 'the other side' of a dashboard project, a node on a network providing regular data. I designed the prototype hardware capable of running on battery power in the field for over a year, with multiple integrated sensors and a radio. I programmed the firmware that connects the device to the LoRa network and encodes environmental data in an appropriate format for subsequent visualization on a dashboard.<br>
+                            <a href="#projA"><strong> Project A </strong></a> is a way-finding application with a situated multimodal interface designed for accessibility. This demonstrates a 'bread-and-butter' Java application with typical administrative functionality available via a familiar menu system, implemented with a standard Model-View-Controller design pattern. Data management includes parsing XML to load and display a map, and embedded media files (immersive spatial audio) in the visualization. The system integrates a hand-tracking sensor and hardware buttons for robust user interaction.<br>
+                            <a href="#projA"><strong> Project B </strong></a> is a remote sensing device on an Internet-of-Things (IoT) platform. This is somewhat 'the other side' of a dashboard project, a node on a network providing regular data. I designed the prototype hardware capable of running on battery power in the field for over a year, with multiple integrated sensors and a radio. I programmed the firmware that connects the device to the LoRa network and encodes environmental data in an appropriate format for subsequent visualization on a dashboard.<br>
 I hope these two projects demonstrate that I can develop the required software for the Building City Dashboards project using established frameworks, while also showing I have experience implementing novel hardware applications and bespoke interactive experiences using a range of platforms and technologies. Additional project demonstrations are available, including those of a more artistic nature.
                         </p>    
                     </header>
                     <section>
-                        <h2>Project A – Audio Tactile Map</h2>
+                        <iframe src="https://player.vimeo.com/video/138735060" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/138735060">Audio Tactile Map Demo</a> from <a href="https://vimeo.com/liamosullivan">Liam O&#039;Sullivan</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                        <a name = "projA"><h2>Project A – Audio Tactile Map</h2></a>
                         <p style="text-align:justify">Tactile surfaces can display information in a variety of applications for all users, but can be of particular benefit to blind and visually-impaired individuals. The Audio-Tactile Map (ATM) project involved the development of a system which tracks the actions of a user’s hands over a tactile paper map and responds with an auditory display providing text-to-speech rendered information and spatialized environmental sounds useful for navigation. 
 The prototype system integrated a variety of technologies (fig. 1); the desktop application was implemented in Java (fig. 2), while interface components used HTML and JavaScript with off-the-shelf hardware sensors (LEAP Motion and Microsoft Kinect) to achieve the project goals.  
 <img src="public_html/img/ATM_System_Kinect.png" style='height: 100%; width: 100%; object-fit: contain' alt="ATM System Diagram"/>
                         <div><strong>Figure 1: The ATM system overview</strong><br><br></div>
                         
-                    <img src="public_html/img/ATM_desk.png" style='height: 100%; width: 100%; object-fit: contain' alt="ATM System Diagram"/>
+                    <img src="public_html/img/ATM_desk.png" style='height: 100%; width: 100%; object-fit: contain' alt="ATM desktop software"/>
                         <div><strong>Figure 2: ATM desktop software</strong><br><br></div>
- 
+                        
                        A mobile version of the interface was also created which communicated with the host application over a wireless network (fig. 3).
                     
-                    <img src="public_html/img/ATM_iPad.png" style='height: 100%; width: 100%; object-fit: contain' alt="ATM System Diagram"/>
+                    <img src="public_html/img/ATM_iPad.jpg" style='height: 100%; width: 100%; object-fit: contain' alt="ATM mobile tablet interface"/>
                     <div><strong>Figure 3: ATM mobile tablet interface version</strong><br><br></div>
 </section>
                     
                     <section>
-                        <h2>Project B – Tree Dendrometer</h2>
+                        <a name = "projB"><h2>Project B – Tree Dendrometer</h2></a>
                         <p style="text-align:justify">A dendrometer is a device for measuring the diameter of tree stems and periodic readings taken over time can provide valuable data on tree growth. A point dendrometer (fig. 4) is an instrument for measuring the change in stem size over time; in this project it is interfaced with an AtMega microcontroller via a high-resolution analogue-to-digital converter. In addition to near real-time data collected on tree growth, a temperature and humidity sensor is used to provide environmental readings. 
-                    <img src="public_html/img/dendro_tcd_1.JPG" style='height: 100%; width: 100%; object-fit: contain' alt="ATM System Diagram"/>
+                    <img src="public_html/img/dendro_tcd_1.JPG" style='height: 100%; width: 100%; object-fit: contain' alt="Dendrometer mounted on tree"/>
                         <div><strong>Figure 4: Tree dendrometer prototype</strong><br><br></div>
 The unit is battery-powered and can operate in the field for more than a year. Communication is through a radio module connected to a LoRa Wide Area Network (WAN) which passes data to a visualisation via an Application Enablement Platform (fig.2).
 The source code for this ongoing project is confidential, so the GitHub repository is private 
-                    <img src="public_html/img/Dendro_dash.png" style='height: 100%; width: 100%; object-fit: contain' alt="ATM System Diagram"/>
+                    <img src="public_html/img/Dendro_dash.png" style='height: 100%; width: 100%; object-fit: contain' alt="Data visualisation dashboard"/>
                         <div><strong>Figure 5: Dendrometer project dashboard</strong><br><br></div>
                     </section>
                     
